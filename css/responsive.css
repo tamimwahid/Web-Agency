@@ -1,0 +1,204 @@
+@media only screen and (max-width: 1200px)
+{
+    .gallery {
+        margin: .8rem;
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .mobile-menu span {
+        font-size: 3.6rem;
+        margin-top: 0;
+        display: block;
+    }
+
+    .main-nav, .social-icon {
+        display: none;
+    }
+    
+    .logo {
+        padding-bottom: .4rem;
+    }
+
+    .service {
+        height: auto;
+    }
+
+    .hero-right img{
+        padding-top: 4rem;
+    }
+
+    .portfolio {
+         height: auto;
+    }
+
+    .gallery {
+        margin: .8rem;
+        width: 23%;
+    }
+
+    .about-description {
+        padding-top: 4rem;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 980px)
+{
+    .container {
+        max-width: 900px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+    }
+
+    .col-lg-6, .col-lg-4 {
+        width: 50%;
+    }
+    
+    .logo {
+        width: 60%;
+    }
+
+    .service, .contact {
+        height: auto;
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px)
+{
+    html {
+        font-size: 66%;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col-lg-6, .col-lg-4 {
+        width: 100%;
+    }
+
+    .logo {
+        width: 24%;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu span {
+        margin-top: -5.5rem;
+    }
+
+    .hero-left {
+        text-align: center;
+        margin-top: 7rem;
+    }
+    
+    .hero-right img {
+        width: 100%;
+        padding: 0rem 0rem 0rem 9rem;
+        margin-left: 0;
+    }
+    
+    .hero-section, .service, .portfolio, .about, .contact, footer {
+        height: auto;
+    }
+
+    .gallery {
+        width: 45.9%;
+    }
+
+    .desc {
+        color: #f3f3f3;
+    }
+
+    .about-box, .about-box img {
+        padding-top: 3rem;
+    }
+
+    .contact-box {
+        margin: 2rem 2rem;
+    }
+
+    .second-footer .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    header {
+        height: 4rem;
+    }
+
+    .logo {
+        width: 30%;
+        padding: 0rem;
+    }
+
+    .mobile-menu span {
+        margin: -3.6rem 0rem 0rem 0rem;
+        font-size: 3rem;
+    }
+
+    .hero-right img {
+        padding: 0rem;
+    }
+
+    .gallery {
+        width: 100%;
+        margin: 4rem 0rem 0rem 0rem;
+    }
+
+    .col-lg-6 {
+        width: 100% !important;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    input#email {
+        width: 60%;
+    }
+
+    .submit-btn {
+        background-color: #d03300;
+        width: 26%;
+    }
+
+    .second-footer .col-lg-6 p{
+        text-align: center;
+    }
+
+    .second-footer .col-lg-6 ul{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+}

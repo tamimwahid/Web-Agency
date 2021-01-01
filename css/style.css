@@ -1,0 +1,453 @@
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*=================================*/
+/* Reusable Components */
+/*=================================*/
+
+ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+ul li a {
+	color: #ffffff;
+}
+
+/*=================================*/
+/* Header Section */
+/*=================================*/
+
+header {
+    width: 100%;
+    height: auto;
+	background-image: linear-gradient(#461996, #6841af);
+}
+
+.headerLogo {
+	display: block;
+}
+
+.logo {
+	width: 100%;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	text-decoration: none;
+}
+
+.main-nav li a:hover {
+	color: #d2d2d2;
+}
+
+.main-nav li a {
+	text-transform: capitalize;
+	padding: .5rem 1.8rem;
+	font-size: 1.6rem;
+}
+
+.social-icon {
+	margin-top: .8rem;
+}
+
+.social-icon i {
+	font-size: 2.2rem;
+	color: #28a745;
+	cursor: pointer;
+	padding: .6rem;
+}
+
+/*=================================*/
+/* Mobile Menu */
+/*=================================*/
+
+.mobile-menu span{
+	color: #fff;
+	font-size: 2.6rem;
+	float: right;
+	margin-top: -2.5rem;
+	display: none;
+}
+
+.mobile-menu span:hover {
+	cursor: pointer;
+}
+
+.overlay {
+	width: 0;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0, 0.9);
+	z-index: 1;
+	overflow-x: hidden;
+	transition: .5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+}
+
+.overlay a {
+	text-decoration: none;
+	display: block;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: #999;
+	padding: 1rem 0rem;
+}
+
+.overlay a:hover {
+	color: #fff;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 0rem;
+	right: 2.2rem;
+	font-size: 3.2rem;
+}
+
+
+
+/*=================================*/
+/* Hero Section */
+/*=================================*/
+
+.hero-section {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(rgb(255 255 255 / 0), #000), url(img-bg/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-left {
+	margin-top: 17.2rem;
+	text-align: right;
+}
+
+.hero-left h1 span {
+	color: #28a745;
+	font-size: 4rem;
+}
+.hero-left h2 {
+	color: #000;
+	font-size: 2.6rem;
+}
+
+.hero-right img{
+	width: 130%;
+	margin-left: -10rem;
+}
+
+.hero-bottom {
+	margin-top: 8rem;
+	color: #fff;
+}
+
+.hero-bottom h3 {
+	font-size: 3rem;
+	line-height: 6rem;
+}
+.hero-bottom p {
+	color: #909090;
+	font-size: 1.4rem;
+}
+
+/*=================================*/
+/* Service Section */
+/*=================================*/
+
+.service {
+	width: 100%;
+	height: auto;
+	padding: 8rem 0;
+	background-image: linear-gradient(#000, #5d4db7);
+}
+
+.service-title h1 {
+	color: #fff;
+	font-size: 4rem;
+}
+
+.service-title p{
+	color: #909090;
+	font-size: 1.4rem;
+}
+
+.service-box {
+	padding: 5rem 2.2rem 0rem 2.2rem;
+}
+
+.service-box i {
+	font-size: 6.4rem;
+	color: #ebff21;
+	padding-bottom: 3rem;
+}
+
+.service-box h3 {
+	color: #fff;
+	font-size: 2.4rem;
+}
+
+.service-box p {
+	color: #909090;
+	font-size: 1.4rem;
+}
+
+/*=================================*/
+/* Portfolio Section */
+/*=================================*/
+
+.portfolio {
+	width: 100%;
+	height: auto;
+	padding: 8rem 0;
+	text-align: center;
+	background-image: linear-gradient(#ffc1c1, #000);
+}
+
+.portfolio-head h1 {
+	font-size: 4rem;
+}
+
+.portfolio-head p {
+	font-size: 1.4rem;
+	color: #424242;
+}
+
+.portfolio-head {
+	color: #2b2b2b;
+	padding-bottom: 4rem;
+}
+
+.gallery {
+	margin: 3rem .5rem;
+	border: .1rem solid #b5b5b5;
+	float: left;
+	width: 24%;
+}
+  
+.gallery:hover {
+	border: .1rem solid #777;
+}
+  
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+  
+.desc {
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #f3f3f3;
+}
+
+/*=================================*/
+/* About Section */
+/*=================================*/
+
+.about {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(rgb(0 0 0 / 78%),rgb(0 0 0 / 32%)), url(img-bg/about.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	color: #fff;
+	text-align: center;
+	padding: 8rem 0;
+}
+
+.about h1 {
+	font-size: 4rem;
+}
+
+.about p {
+	font-size: 1.4rem;
+	color: #c7c7c7;
+}
+
+.about-box {
+	padding-top: 10.4rem;
+	margin: auto;
+	text-align: center;
+	color: #2a9daf;
+}
+
+.about-description {
+	padding-top: 6rem;
+}
+.about-box h2 {
+	font-size: 2.6rem;
+}
+
+/*=================================*/
+/* Contact Section */
+/*=================================*/
+
+.contact {
+	width: 100%;
+	height: auto;
+	padding: 8rem 0;
+	background-image: linear-gradient(#ff4646, #000000);
+	color: #000;
+	text-align: center;
+}
+
+.contact-head {
+	text-align: center;
+	padding-bottom: 6rem;
+}
+
+.contact-head h1 {
+	font-size: 4rem;
+	color: #e6e6e6;
+}
+
+.contact-head P {
+	font-size: 1.4rem;
+	color: #d0d0d0;
+}
+
+.contact-box {
+	background-color: #e8e8e8;
+	padding: 5rem 4rem;
+	border-radius: .4rem;
+}
+
+.contact-box i {
+	padding-bottom: 2rem;
+	font-size: 4.3rem;
+	color: #FF7043;
+}
+
+.contact-box h3 {
+	font-size: 2.6rem;
+	color: #383838;
+}
+
+.contact-box p {
+	font-size: 1.4rem;
+	color: #757575;
+}
+
+.subscribe {
+	width: 100%;
+	height: 2rem;
+	padding: 12rem 0rem;
+}
+
+input#email {
+    width: 60%;
+    height: 5rem;
+}
+
+.submit-btn {
+    background-color: #d03300;
+    width: 18%;
+    height: 5rem;
+    border: .1rem solid #fff;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.submit-btn:hover {
+	background-color: beige;
+	color: #ff5e2d;
+	border: .1rem solid #e81000;
+}
+
+/*=================================*/
+/* Footer Section */
+/*=================================*/
+
+footer {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(rgb(0 0 0 / 80%),rgb(0 0 0 / 69%)), url(img-bg/nasa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.footer-border {
+	border-bottom: .1rem solid #404040;
+}
+
+.first-footer {
+	padding: 8rem 0;
+	color: #fff;
+	text-align: left;
+}
+
+.footer-box h3 {
+	font-size: 2.6rem;
+}
+
+.footer-box p {
+	font-size: 1.4rem;
+}
+
+.footer-box ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.footer-box ul li {
+	color: #bbbbbb;
+}
+
+.footer-box h3 {
+	padding-bottom: 3.3rem;
+}
+
+.second-footer {
+	width: 100%;
+	background-color: #000000a8;
+	color: #565656;
+	padding: 2.2rem;
+}
+
+.second-footer p {
+	text-align: left;
+	font-size: 1.2rem;
+	margin: 0 !important;
+}
+.second-footer ul{
+	text-align: right;
+	margin: 0 !important;
+}
+
+.second-footer ul li {
+	cursor: pointer;
+}
+
+.second-footer ul li i {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
